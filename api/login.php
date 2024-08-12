@@ -1,3 +1,8 @@
+
+<?php
+$imgurl='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4-WJtGSJUgYrJOkDOK7t9qaTpwak6V5eeDtfnEQfrMW8qY-zZ';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +36,7 @@
                 <div class="row justify-content-center  ">
                    
                     <div class="col-lg-4 col-sm-6 bg-light p-0">
-                        <img src="/images/car_img.jpg" class="img-fluid" style="height: 100%; object-fit: cover;"/>
+                        <img src="<?php echo $imgurl ?>" class="img-fluid" style="height: 100%; object-fit: cover;"/>
                         
                         <div class=" col-sm-4 col-lg-3 position-absolute  top-50 text-center  " >
         <p class="text-white mb-0 fw-bold">"A car for every purse and purpose."</p>
