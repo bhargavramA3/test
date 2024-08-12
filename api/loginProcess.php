@@ -1,7 +1,6 @@
 <?php
 	 include(__DIR__ . "/config.php");
 	session_start();
-	echo "welcom";
 	$email = $_POST['email'];
 	$password=$_POST['password'];
 	
@@ -19,10 +18,6 @@
 	 echo $password;
 	 $rowdata = mysqli_fetch_assoc($result);
 	 if($count == 1) {
-	  
-	
-		
-	 		echo $rowdata['role'];
 	 		if(strcmp($rowdata['role'],"user")){
 	 			header("location: /dash.php");
 	 		}else{
@@ -30,9 +25,6 @@
 	 		}
 		
 	  } else {
-		
-
-	 	echo '<script>alert("incorrect credentials")</script>'; 
 	 	header("location: /login");
 		
 	  }
