@@ -87,13 +87,13 @@ if(isset($_POST['delect'])){
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <li><a class="dropdown-item" href="#">
-    <form action=" /api/updatevehicle.php" method="POST">
+    <form action=" /updatevehicle" method="POST">
     <input type="hidden" name="car_id" value="<?php echo $rowdata['id']; ?>"/>
          <button class="btn" type="submit" name="update">update</button>
     </form>
     </a></li>
     <li><a class="dropdown-item" href="#">
-    <form action="/api/co.php" method="POST">
+    <form action="/co" method="POST">
     <input type="hidden" name="car_id" value="<?php echo $rowdata['id']; ?>"/>
          <button class="btn" type="submit" name="delete">delete</button>
     </form>
