@@ -6,5 +6,11 @@
     },
     "routes": [
       { "src": "/(.*)",  "dest": "/api/index.php" }
-    ]
+    ],
+    "env": {
+        "DB_HOST": "database-1.cvg62oeaiswq.ap-southeast-2.rds.amazonaws.com",
+        "DB_USER": "admin",
+        "DB_PASSWORD": "bhargavsairam",
+        "DB_NAME": "database-1"
+      }
   }
