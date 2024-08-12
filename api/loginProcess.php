@@ -19,9 +19,9 @@
 	 $rowdata = mysqli_fetch_assoc($result);
 	 if($count == 1) {
 	 		if(strcmp($rowdata['role'],"user")){
-	 			header("location: /dash.php");
+	 			header("location: /api/dash.php");
 	 		}else{
-	 				header("location: /userdash.php");
+	 				header("location: /api/userdash.php");
 	 		}
 		
 	  } else {
