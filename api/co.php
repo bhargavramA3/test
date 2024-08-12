@@ -1,5 +1,5 @@
 <?php
-    include(__DIR__ . "/config.php");
+    // include(__DIR__ . "/config.php");
     if(isset($_POST['submit']))
         echo "hello";
         $id=$_POST['car_id'];
