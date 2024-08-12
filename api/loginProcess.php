@@ -1,6 +1,7 @@
 <?php
-	include(__DIR__ . "/config.php");
+	// include(__DIR__ . "/config.php");
 	session_start();
+	echo "welcom";
 	$email = $_POST['email'];
 	$password=$_POST['password'];
 	
@@ -8,32 +9,32 @@
 	// if(!$conn){
 	// 	echo "database connection error";
 	// }
-	$query= "SELECT * FROM admin_table WHERE email = '$email' and pwd = '$password'";
-	$result=mysqli_query($conn,$query);
-	$row=mysqli_num_rows($result);
+	// $query= "SELECT * FROM admin_table WHERE email = '$email' and pwd = '$password'";
+	// $result=mysqli_query($conn,$query);
+	// $row=mysqli_num_rows($result);
 
-	$count=mysqli_num_rows($result);
-	// echo $count;
-	// echo $email;
-	// echo $password;
-	$rowdata = mysqli_fetch_assoc($result);
-	if($count == 1) {
+	// $count=mysqli_num_rows($result);
+	// // echo $count;
+	// // echo $email;
+	// // echo $password;
+	// $rowdata = mysqli_fetch_assoc($result);
+	// if($count == 1) {
 	  
-		// session_register("myusername");
-		$_SESSION['login_user'] = $email;
-			echo $rowdata['role'];
-			if(strcmp($rowdata['role'],"user")){
-				header("location: /dash");
-			}else{
-					header("location: /userdash");
-			}
+	// 	// session_register("myusername");
+	// 	$_SESSION['login_user'] = $email;
+	// 		echo $rowdata['role'];
+	// 		if(strcmp($rowdata['role'],"user")){
+	// 			header("location: /dash");
+	// 		}else{
+	// 				header("location: /userdash");
+	// 		}
 		
-	 } else {
+	//  } else {
 		
 
-		echo '<script>alert("incorrect credentials")</script>'; 
-		header("location: /login");
+	// 	echo '<script>alert("incorrect credentials")</script>'; 
+	// 	header("location: /login");
 		
-	 }
+	//  }
 
 ?>
