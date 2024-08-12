@@ -28,7 +28,7 @@
 			
 		<div class="col-lg-4 col-sm-10 bg-light">
 		<div class="container">
-		<form action="/api/co" method="POST">
+		<form action="/co" method="POST">
             <div class="mb-3">
                 <label class="form-label" for="inputName">car name</label>
                 <input type="name" class="form-control" id="inputName" placeholder="name" name="carname" />

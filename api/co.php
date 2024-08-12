@@ -1,12 +1,11 @@
 <?php
     include(__DIR__ . "/config.php");
     if(isset($_POST['submit'])){
-        echo "hello";
         $id=$_POST['car_id'];
 		$mname=$_POST['carname'];
 		$price=$_POST['price'];
 		$date=$_POST['date'];
-		echo $mname." ".$date;
+		// echo $mname." ".$date;
 
          $query = "UPDATE cars SET car_name = ?, price = ?, manufacturing_date = ? WHERE id = ?";
     
@@ -19,14 +18,14 @@
     
              // Execute the statement
             if (mysqli_stmt_execute($stmt)) {
-                 echo "Update successful";
+                //  echo "Update successful";
              } else {
                  echo "Error updating record: " . mysqli_error($conn);
              }
     
              // Close the statement
              mysqli_stmt_close($stmt);
-             header("location: /api/dash");
+             header("location: /dash");
          } else {
              echo "Error preparing statement: " . mysqli_error($conn);
          }
@@ -35,7 +34,7 @@
        
 	 }
      if(isset($_POST['addcar'])){
-         echo "carworld";
+         
         
 	 	$name=$_POST['carname'];
 	 	$price=$_POST['price'];
@@ -53,14 +52,14 @@
     
              // Execute the statement
              if (mysqli_stmt_execute($stmt)) {
-                 echo "Update successful";
+                //  echo "Update successful";
              } else {
                  echo "Error updating record: " . mysqli_error($conn);
              }
     
              // Close the statement
              mysqli_stmt_close($stmt);
-             header("location: /api/dash");
+             header("location: /dash");
          } else {
              echo "Error preparing statement: " . mysqli_error($conn);
          }
@@ -69,7 +68,7 @@
        
 	 }
      if(isset($_POST['delete'])){
-         echo "cardelete";
+        //  echo "cardelete";
         
 	 	$id=$_POST['car_id'];
 		
@@ -86,14 +85,14 @@
     
              // Execute the statement
              if (mysqli_stmt_execute($stmt)) {
-                 echo "Update successful";
+                //  echo "Update successful";
              } else {
                  echo "Error updating record: " . mysqli_error($conn);
              }
     
              // Close the statement
              mysqli_stmt_close($stmt);
-             header("location: /api/dash");
+             header("location: /dash");
          } else {
              echo "Error preparing statement: " . mysqli_error($conn);
          }
