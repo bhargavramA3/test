@@ -1,7 +1,7 @@
 <?php
 
 phpinfo(); 
-$servername =' mysql-276140da-saib85199-41c8.k.aivencloud.com';
+$servername =getenv('DB_HOST');
 $username = 'avnadmin';
 $password = getenv('DB_PASSWORD');
 $dbname = 'defaultdb';
