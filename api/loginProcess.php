@@ -20,8 +20,8 @@
 	 $rowdata = mysqli_fetch_assoc($result);
 	 if($count == 1) {
 	  
-	 session_register("myusername");
-		$_SESSION['login_user'] = $email;
+	
+		
 	 		echo $rowdata['role'];
 	 		if(strcmp($rowdata['role'],"user")){
 	 			header("location: /dash");

@@ -1,12 +1,12 @@
 <?php
-    include(__DIR__ . "/api/config.php");
+    include(__DIR__ . "/config");
 if(isset($_POST['redirect'])){
-	header("location: /api/addvehicle");
+	header("location: /addvehicle");
 	exit();
 }
 
 if(isset($_POST['delect'])){
-	header("location: /api/deletevehicle");
+	header("location: /deletevehicle");
 	exit();
 }
 ?>
