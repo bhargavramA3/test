@@ -1,5 +1,5 @@
 <?php
-    include(__DIR__ . "/config");
+    include(__DIR__ . "/config.php");
 if(isset($_POST['redirect'])){
 	header("location: /addvehicle");
 	exit();
