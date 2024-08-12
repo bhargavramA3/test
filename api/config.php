@@ -1,11 +1,13 @@
 <?php
-$servername = getenv('DB_HOST');
-$username = getenv('DB_USER');
+
+phpinfo(); 
+$servername =' mysql-276140da-saib85199-41c8.k.aivencloud.com';
+$username = 'avnadmin';
 $password = getenv('DB_PASSWORD');
-$dbname = getenv('DB_NAME');
-$port = getenv('DB_PORT');
+$dbname = 'defaultdb';
+$port =26663;
 // Create connection
-$conn = new mysqli($servername, $username, $password,$dbname);
+$conn = new mysqli($servername, $username, $password,$dbname,$port);
 
 // Check connection
 echo "connection susseccfuk";
