@@ -8,6 +8,7 @@ $port = getenv('DB_PORT');
 $conn = new mysqli($servername, $username, $password,"mydb");
 
 // Check connection
+echo "connection susseccfuk";
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }

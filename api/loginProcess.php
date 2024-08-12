@@ -1,5 +1,5 @@
 <?php
-	// include(__DIR__ . "/config.php");
+	 include(__DIR__ . "/config.php");
 	session_start();
 	echo "welcom";
 	$email = $_POST['email'];
