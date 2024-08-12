@@ -13,7 +13,7 @@ $request_uri = strtok($request_uri, '?');
 switch ($request_uri) {
     case '/':
     case '/login':
-        require __DIR__ . '/api/login.php';
+        require __DIR__ . '/login.php';
         break;
     default:
         // 404 - Page not found
