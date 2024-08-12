@@ -1,6 +1,6 @@
 <?php
     include(__DIR__ . "/config.php");
-    if(isset($_POST['submit'])){
+    if(isset($_POST['submit']))
         echo "hello";
         $id=$_POST['car_id'];
 		$mname=$_POST['carname'];
