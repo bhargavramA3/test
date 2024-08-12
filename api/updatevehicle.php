@@ -16,12 +16,6 @@
 	
 ?>
 
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +47,7 @@
     </div>
     <div class="row bg-light">
         <div class="col-lg-12 col-sm-12 bg-light">
-        <form action="co.php" method="POST">
+        <form action="/co" method="POST">
                 
                 <div class="mb-3">
                     <label class="form-label" for="inputName">Email</label>
