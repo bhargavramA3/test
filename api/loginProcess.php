@@ -24,9 +24,9 @@
 		
 	 		echo $rowdata['role'];
 	 		if(strcmp($rowdata['role'],"user")){
-	 			header("location: /dash");
+	 			header("location: /dash.php");
 	 		}else{
-	 				header("location: /userdash");
+	 				header("location: /userdash.php");
 	 		}
 		
 	  } else {
