@@ -1,8 +1,8 @@
 <?php
-$host = $_SERVER['DB_HOST'] ?? null;
-$user = $_SERVER['DB_USER'] ?? null;
-$pass = $_SERVER['DB_PASSWORD'] ?? null;
-$db   = $_SERVER['DB_NAME'] ?? null;
+$host = $_ENV['DB_HOST'] ?? 'localhost';   // Fallback values can be provided if needed
+$user = $_ENV['DB_USER'] ?? 'root';
+$pass = $_ENV['DB_PASSWORD'] ?? '';
+$db   = $_ENV['DB_NAME'] ?? 'test';
 $port = 26663; // Aiven often uses non-standard ports, make sure this is correct
 echo $host." ".$user." ".$pass." ".$db." ".$port;
 // Debug logging
