@@ -15,6 +15,24 @@ switch ($request_uri) {
     case '/login':
         require __DIR__ . '/login.php';
         break;
+    case '/dash':
+        require __DIR__ . '/dash.php';
+        break;
+    case '/userdash':
+        require __DIR__ . '/userdash.php';
+        break;
+    case '/updatevehicle':
+        require __DIR__ . '/updatevehicle.php';
+        break;
+    case '/addvehicle':
+        require __DIR__ . '/addvehicle.php';
+        break;
+    case '/loginProcess':
+        require __DIR__ . '/loginProcess.php';
+        break;
+    case '/co':
+        require __DIR__ . '/co.php';
+        break;
     default:
         // 404 - Page not found
         header("HTTP/1.0 404 Not Found");
