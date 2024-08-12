@@ -1,6 +1,6 @@
 <?php
 	 include(__DIR__ . "/config.php");
-	session_start();
+	
 	$email = $_POST['email'];
 	$password=$_POST['password'];
 	
@@ -13,9 +13,9 @@
 	 $row=mysqli_num_rows($result);
 
 	 $count=mysqli_num_rows($result);
-	 echo $count;
-	 echo $email;
-	 echo $password;
+	//  echo $count;
+	//  echo $email;
+	//  echo $password;
 	 $rowdata = mysqli_fetch_assoc($result);
 	 if($count == 1) {
 	 		if(strcmp($rowdata['role'],"user")){
