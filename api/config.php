@@ -5,7 +5,7 @@ $password = getenv('DB_PASSWORD');
 $dbname = getenv('DB_NAME');
 $port = getenv('DB_PORT');
 // Create connection
-$conn = new mysqli($servername, $username, $password,"mydb");
+$conn = new mysqli($servername, $username, $password,"defaultdb");
 
 // Check connection
 echo "connection susseccfuk";
